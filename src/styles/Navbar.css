@@ -1,0 +1,64 @@
+.div-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-logo{
+    width: 20rem;
+}
+
+.div-buttons{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.div-switch{
+    display: flex;
+    gap: .5rem;
+}
+
+.nav-button{
+    text-decoration: none;
+    color: #1f1e20;
+    background: linear-gradient(83.28deg, #2fcd00 0%, #71d650 100%);
+    padding: .5rem 2rem;
+    border-radius: 30px;
+    border: 1px solid #2fcd00;
+}
+.ingreso-btn{
+    background: none;
+    border: 1px solid #2fcd00;
+    padding: .5rem 2rem;
+    border-radius: 30px;
+}
+
+.ingreso-btn:hover{
+    background: linear-gradient(83.28deg, #2fcd00 0%, #8bce75 100%);
+}
+
+.nav-button-a {
+    display: inline-block;
+    position: relative;
+}
+
+.nav-button-a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #2fcd00;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-button-a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.icon-dark-mode{
+    width: 1.5rem;
+}

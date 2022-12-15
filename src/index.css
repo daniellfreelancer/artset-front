@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+#light {
+  background-color: #f3ebf6;
+  color:#1f1e20;
+}
+
+#light a {
+  background-color: #f3ebf6;
+  color:#1f1e20;
+  text-decoration: none;
+}
+
+#dark {
+  background-color: #1f1e20;
+  color: #f3ebf6;
+}
+
+#dark a {
+  background-color: #1f1e20;
+  color: #f3ebf6;
+  text-decoration: none;
+}
