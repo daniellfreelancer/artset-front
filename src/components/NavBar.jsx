@@ -18,9 +18,9 @@ export default function NavBar(props) {
       </div>
 
       <div className="div-buttons p-5">
-        <a className="nav-button-a" href="#">Tienda On-Line</a>
-        <a className="nav-button-a" href="#">Landing Page</a>
-        <a className="nav-button-a " href="#">Movil Apps</a>
+        <a className="nav-button-a" href="https://google.com">Tienda On-Line</a>
+        <a className="nav-button-a" href="https://google.com">Landing Page</a>
+        <a className="nav-button-a " href="https://google.com">Movil Apps</a>
         <a className="ingreso-btn shadow" href="http://">Ingreso</a>
         <a className="nav-button shadow" href="http://">Registro</a>
 
