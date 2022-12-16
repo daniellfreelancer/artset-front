@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 
 .img-logo{
@@ -62,3 +63,48 @@
 .icon-dark-mode{
     width: 1.5rem;
 }
+
+.btn-drawer-menu{
+    background: none;
+    border: 1px solid #2fcd00;
+    padding: .5rem 2rem;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+.div-drawer-menu{
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    gap: 1rem;
+}
+@media (max-width:1024px) {
+    .div-buttons{
+        display: none;
+    }
+    .btn-drawer-menu{
+        display: inline-flex;
+
+    }
+    
+}
+@media (max-width:425px) {
+    .div-nav{
+        flex-direction: column;
+    }
+    .btn-drawer-menu{
+margin-top: 0 !important;
+
+    }
+    .div-logo{
+        padding: 1rem 2rem !important;
+    }
+    
+.img-logo{
+    width: 100%;
+}
+    
+}
+

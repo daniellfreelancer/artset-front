@@ -1,32 +1,35 @@
-import React from "react";
-import ReactSwitch from "react-switch";
-import ASLogo from "../assets/artsetLogo.png";
-import ASLogoLight from "../assets/artsetLogoLight.png";
+import React, { useState } from 'react';
+import { Button, Drawer } from 'antd';
 import '../styles/Navbar.css'
-import sun from '../assets/sun.png'
-import moon from '../assets/moon.png'
-import Menu from "./Menu";
 
 
-export default function NavBar(props) {
-  let myTheme = props.theme;
+export default function Menu() {
+    const [open, setOpen] = useState(false);
+
+  const showDrawer = () => {
+    setOpen(true);
+  };
+
+  const onClose = () => {
+    setOpen(false);
+  };
+
   return (
-    <nav className="div-nav">
-      <div className="div-logo p-5">
-        {
-            myTheme === "light" ? (<img className="img-logo" src={ASLogo} alt="logo Art Set" />) : <img  className="img-logo" src={ASLogoLight} alt="logo Art Set" />
-        }
-        
-      </div>
-
-      <div className="div-buttons p-5">
+    <>
+      <Button className='btn-drawer-menu m-5' onClick={showDrawer}>
+        MENÚ
+      </Button>
+      <Drawer title="Art Set | Desarrollo Web y Movil" placement="right"  onClose={onClose} open={open}>
+        <div className='div-drawer-menu'>
         <a className="nav-button-a" href="https://google.com">Tienda On-Line</a>
         <a className="nav-button-a" href="https://google.com">Landing Page</a>
         <a className="nav-button-a " href="https://google.com">Movil Apps</a>
         <a className="ingreso-btn shadow" href="http://">Ingreso</a>
         <a className="nav-button shadow" href="http://">Registro</a>
 
-      <div className="switch div-switch">
+        </div>
+
+      {/* <div className="switch div-switch">
         <label> {myTheme === "light" ? ( <img className="icon-dark-mode" src={sun} alt="sun"/> ) : ( <img className="icon-dark-mode" src={moon} alt="moon"/> )}</label>
         <ReactSwitch
           onChange={props.onChange}
@@ -43,11 +46,9 @@ export default function NavBar(props) {
           className="react-switch"
           id="small-radius-switch"
         />
-      </div>
-      </div>
+      </div> */}
 
-      <Menu/>
-
-    </nav>
-  );
+      </Drawer>
+    </>
+  )
 }

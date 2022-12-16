@@ -29,3 +29,7 @@ body {
   color: #f3ebf6;
   text-decoration: none;
 }
+
+#dark .btn-drawer-menu {
+  color: #f3ebf6;
+}
