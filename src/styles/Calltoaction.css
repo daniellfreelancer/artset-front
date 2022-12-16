@@ -14,7 +14,8 @@
     font-size: 3rem;
 }
 .title-strong{
-    text-decoration: underline #2fcd00;
+    border-bottom: 2px solid #2fcd00 ;
+
 }
 .div-container-text-call{
     width: 40%;

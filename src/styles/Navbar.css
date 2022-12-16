@@ -95,6 +95,9 @@
     text-decoration: none;
     color: #1f1e20;
 }
+.nav-button-menu:hover {
+    color: #1f1e20;
+}
 .span-swicth{
     display: flex;
     gap: .5rem;

@@ -7,7 +7,7 @@ export const ThemeContext = createContext(null);
 
 export default function Layout({children}) {
 
-    const [theme, setTheme] = useState("light");
+    const [theme, setTheme] = useState("dark");
 
     const toggleTheme = () => {
       setTheme((e) => (e === "light" ? "dark" : "light"));
