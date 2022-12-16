@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
 import { Button, Drawer } from 'antd';
 import '../styles/Navbar.css'
+import '../index.css'
 
 
 export default function Menu() {
+
+
+
     const [open, setOpen] = useState(false);
 
   const showDrawer = () => {
@@ -21,10 +25,10 @@ export default function Menu() {
       </Button>
       <Drawer title="Art Set | Desarrollo Web y Movil" placement="right"  onClose={onClose} open={open}>
         <div className='div-drawer-menu'>
-        <a className="nav-button-a" href="https://google.com">Tienda On-Line</a>
-        <a className="nav-button-a" href="https://google.com">Landing Page</a>
-        <a className="nav-button-a " href="https://google.com">Movil Apps</a>
-        <a className="ingreso-btn shadow" href="http://">Ingreso</a>
+        <a className="nav-button-a nav-button-menu" href="https://google.com">Tienda On-Line</a>
+        <a className="nav-button-a nav-button-menu" href="https://google.com">Landing Page</a>
+        <a className="nav-button-a nav-button-menu" href="https://google.com">Movil Apps</a>
+        <a className="ingreso-btn shadow nav-button-menu" href="http://">Ingreso</a>
         <a className="nav-button shadow" href="http://">Registro</a>
 
         </div>

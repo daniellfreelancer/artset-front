@@ -1,7 +1,7 @@
 import React from "react";
 import ReactSwitch from "react-switch";
 import ASLogo from "../assets/artsetLogo.png";
-import ASLogoLight from "../assets/artsetLogoLight.png";
+import ASLogoLight from "../assets/artsetLogoDark.png";
 import '../styles/Navbar.css'
 import sun from '../assets/sun.png'
 import moon from '../assets/moon.png'
@@ -47,6 +47,24 @@ export default function NavBar(props) {
       </div>
 
       <Menu/>
+      <span className="span-swicth">
+      <label> {myTheme === "light" ? ( <img className="icon-dark-mode" src={sun} alt="sun"/> ) : ( <img className="icon-dark-mode" src={moon} alt="moon"/> )}</label>
+        <ReactSwitch
+          onChange={props.onChange}
+          checked={myTheme === "dark"}
+          onColor="#8bce75"
+          onHandleColor="#8bce75"
+          handleDiameter={17}
+          uncheckedIcon={false}
+          checkedIcon={false}
+          boxShadow="0px 1px 5px rgba(0, 0, 0, 0.6)"
+          activeBoxShadow="0px 0px 1px 10px rgba(0, 0, 0, 0.2)"
+          height={24}
+          width={40}
+          className="react-switch"
+          id="small-radius-switch"
+        />
+      </span>
 
     </nav>
   );

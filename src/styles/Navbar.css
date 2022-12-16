@@ -27,6 +27,17 @@
     border-radius: 30px;
     border: 1px solid #2fcd00;
 }
+
+.nav-button:hover{
+    background: linear-gradient(83.28deg, #71d650  0%, #2fcd00 100%);
+    transition: 1s;
+    background-position: right center;
+
+}
+.nav-button:active {
+    transform: scale(0.95);
+}
+
 .ingreso-btn{
     background: none;
     border: 1px solid #2fcd00;
@@ -77,8 +88,17 @@
 .div-drawer-menu{
     display: flex;
     flex-direction: column;
-    width: 15rem;
+    width: 7rem;
     gap: 1rem;
+}
+.nav-button-menu {
+    text-decoration: none;
+    color: #1f1e20;
+}
+.span-swicth{
+    display: flex;
+    gap: .5rem;
+    display: none;
 }
 @media (max-width:1024px) {
     .div-buttons{
@@ -88,6 +108,7 @@
         display: inline-flex;
 
     }
+
     
 }
 @media (max-width:425px) {
@@ -96,7 +117,10 @@
     }
     .btn-drawer-menu{
 margin-top: 0 !important;
-
+margin-bottom: 1rem !important;
+    }
+    .span-swicth{
+        display: inline-flex;
     }
     .div-logo{
         padding: 1rem 2rem !important;
