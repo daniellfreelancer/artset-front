@@ -1,0 +1,87 @@
+.div-quienes-somos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.div-quienes-somos-img-card{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 10rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.img-quienes-somos{
+    width: 500px;
+    height: 500px;
+    background-image: url('../assets/quienesSomos02.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.div-card-quienes{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    width: 40%;
+    min-height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: justify;
+}
+
+.div-quienes-somos h5{
+    width: 30rem;
+    text-align: center;
+}
+.img-logo-text{
+    width: 20rem;
+}
+
+@media (max-width:1024px) {
+    .div-quienes-somos-img-card{
+        padding: 2rem 0rem !important;
+        gap: 2rem;
+    }
+}
+
+@media (max-width:768px) {
+    .div-card-quienes{
+        width: 90%;
+    }
+    .img-quienes-somos {
+        width: 18rem;
+        height: 18rem;
+    }
+
+}
+
+@media (max-width:425px) {
+
+.div-quienes-somos h5{
+    width: 90%;
+
+}
+.div-quienes-somos h2{
+    width: 70%;
+    text-align: center;
+}
+.div-card-quienes{
+    width: 90%;
+    padding: 1.5rem 1.5rem !important;
+}
+.img-logo-text{
+    width: 95%;
+}
+
+}

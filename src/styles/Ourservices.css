@@ -39,10 +39,8 @@
     width: 10rem;
     border-radius: 5px;
 }
-.div-our-services p{
-    width: 30rem;
-    font-weight: 500;
-    font-size: small;
+.div-our-services h5{
+    width: 40rem;
 }
 
 @media (max-width:1024px) {
@@ -52,7 +50,7 @@
 }
 
 @media (max-width:425px) {
-    .div-our-services p{
+    .div-our-services h5{
         width: 100%;
         
     }

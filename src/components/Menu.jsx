@@ -26,7 +26,7 @@ export default function Menu() {
       <Drawer title="Art Set | Desarrollo Web y Movil" placement="right"  onClose={onClose} open={open}>
         <div className='div-drawer-menu'>
         <a className="nav-button-a nav-button-menu" href="#our-services">Servicios</a>
-        <a className="nav-button-a nav-button-menu" href="https://google.com">Quiénes Somos</a>
+        <a className="nav-button-a nav-button-menu" href="#we-are">Quiénes Somos</a>
         <a className="nav-button-a nav-button-menu" href="https://google.com">Marketing Digital</a>
         <a className="nav-button-a nav-button-menu" href="https://google.com">Productos</a>
         <a className="nav-button-a nav-button-menu" href="https://google.com">Contacto</a>

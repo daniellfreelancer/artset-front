@@ -21,7 +21,7 @@ export default function NavBar(props) {
 
       <div className="div-buttons p-5">
         <a className="nav-button-a" href="#our-services">Servicios</a>
-        <a className="nav-button-a" href="https://google.com">Quiénes Somos</a>
+        <a className="nav-button-a" href="#we-are">Quiénes Somos</a>
         <a className="nav-button-a" href="https://google.com">Marketing Digital</a>
         <a className="nav-button-a " href="https://google.com">Productos</a>
         <a className="nav-button-a " href="https://google.com">Contacto</a>

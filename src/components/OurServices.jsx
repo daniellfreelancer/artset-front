@@ -20,28 +20,28 @@ export default function OurServices() {
             src:icon003,
             alt:"web icon",
             title:"Tienda On-Line",
-            text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,tenetur voluptate delectus dolore velit."
+            text:"Desarrollamos tu tienda On-Line, administra tu stock, maneja tus pedidos y recibe pagos con Mercadopago."
         },
         {
             id:"icon002",
             src:icon002,
             alt:"web icon",
             title:"Marketing Digital",
-            text:"Creamos campañas publicitarias en redes sociales y potenciamos tu marca."
+            text:"Creamos y manejamos tus campañas, potenciamos tu marca en: Facebook, Twitter, Instagram y Google Ads."
         },
         {
             id:"icon004",
             src:icon004,
             alt:"web icon",
             title:"Ideas Startups",
-            text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,tenetur voluptate delectus dolore velit."
+            text:"Ayudamos a desarrollar tu idea. Tambien si estás comenzando con tu PYME o Emprendimiento."
         }
     ]
   return (
     <div id="our-services">
         <div className="div-our-services mt-5 mb-3">
             <h2>Nuestros Servicios</h2>
-            <p className="px-4">Ofrecemos diferentes tipos de servicios Digitales y Marketing para tu negocio, a un precio ideal.</p>
+            <h5 className="px-4">Ofrecemos diferentes tipos de servicios Digitales y Marketing para tu negocio, a un precio ideal.</h5>
             <div className="div-line-services"></div>
         </div>
 
