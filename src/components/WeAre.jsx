@@ -10,7 +10,7 @@ export default function WeAre() {
   const theme = myContext.theme;
 
   return (
-    <div className="div-quienes-somos my-5 py-5">
+    <div className="div-quienes-somos py-5 " id="we-are">
       <h2>Somos una Empresa 100% Digital</h2>
       <h5>
         Líder en diseño y desarrollo de sitios web en Argentina y latinoamerica.
@@ -24,7 +24,7 @@ export default function WeAre() {
           ) : (
             <img className="img-logo-text" src={logoTextLight} alt="web icon" />
           )}
-          <p id="we-are">
+          <p>
             Nuestra agencia ofrece soluciones profesionales de desarrollo web,
             ademas contamos con el servicio de Marketing digital para ayudarte a
             posicionar y a mejorar tu marca con un precio accsesible para una

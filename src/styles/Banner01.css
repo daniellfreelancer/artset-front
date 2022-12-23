@@ -1,0 +1,65 @@
+.div-banner01{
+    display: flex;
+    min-height: 50vh;
+    justify-content:center;
+}
+
+.div-text-banner01{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    height: 50vh;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+.div-img-banner01{
+    width: 50%;
+    background-image: url('../assets/tiendaOnlineStock.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.div-card-banner01{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    gap: 1rem;
+
+}
+
+.img-icon-banner01{
+    width: 5rem;
+}
+.text-banner01{
+    width: 80%;
+}
+
+@media (max-width:768px) {
+    .div-banner01{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem;
+        height: 100% !important;
+        margin-top: 0 !important;
+    }
+    .div-text-banner01{
+        width: 100%;
+    }
+
+    .div-img-banner01{
+        display: none !important;
+    }
+    .text-banner01{
+        width: 100%;
+    }
+
+}
+@media (max-width:320px) {
+
+    .div-text-banner01{
+        height: 100%;
+    }
+}

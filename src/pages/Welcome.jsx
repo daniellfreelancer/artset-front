@@ -1,4 +1,5 @@
 import React from 'react'
+import Banner01 from '../components/Banner01'
 import CallToAction from '../components/CallToAction'
 import OurServices from '../components/OurServices'
 import WeAre from '../components/WeAre'
@@ -8,8 +9,16 @@ export default function Welcome(props) {
   return (
 <Layout>
     <CallToAction/>
-    <OurServices/>
     <WeAre/>
+    <Banner01/>
+    <OurServices/>
+{/* 
+planes
+faq
+tecnologias
+testimonios
+contacto
+*/}
 </Layout>
   )
 }

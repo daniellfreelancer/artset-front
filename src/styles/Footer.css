@@ -1,0 +1,99 @@
+.div-footer-global{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #2fcd00;
+}
+
+
+.btn-suscribe{
+    border: none;
+    height: 2.5rem;
+    border-radius: 0px 5px 5px 0px;
+    background: linear-gradient(83.28deg, #2fcd00 0%, #71d650 100%);
+    padding: .5rem .5rem;
+}
+
+.input-field{
+height: 2.5rem;
+border: 1px solid #71d650;
+border-radius: 5px 0px 0px 5px;
+width: 20rem;
+padding: 1rem 1rem;
+}
+.div-footer-second ul li{
+    list-style-type: none;
+
+}
+
+.div-footer-second{
+    text-align: left !important;
+}
+.div-footer-third{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.div-social-media{
+    display: flex;
+    justify-content:space-between;
+    gap: 2rem;
+}
+
+.social-media-icon{
+    width: 2.5rem;
+}
+
+@media (max-width:1440px) {
+    .div-footer-global{
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .div-footer-first{
+        width: 30%;
+    }
+    .div-footer-second{
+        width: 30%;
+    }
+    .div-footer-third{
+        width: 30%;
+    }
+    .input-field{
+        width: 15rem;
+    }
+}
+@media (max-width:1024px) {
+    .div-footer-global{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding-bottom: 1rem;
+    }
+    .div-footer-first, .div-footer-second, .div-footer-third{
+        width: 100%;
+        text-align: center;
+    }
+    .div-footer-second{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+@media (max-width:425px) {
+    .div-footer-first{
+        padding: 0rem 2rem;
+    }
+}
+
+@media (max-width:320px) {
+    .input-field{
+        width: 11rem;
+    }
+}

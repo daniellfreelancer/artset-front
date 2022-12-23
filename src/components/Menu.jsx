@@ -18,6 +18,45 @@ export default function Menu() {
     setOpen(false);
   };
 
+  const arrayNav = [
+    {
+      id:"nav01",
+      class:"nav-button-a",
+      ref:"#we-are",
+      title:"Quiénes Somos"
+    },
+    {
+      id:"nav02",
+      class:"nav-button-a",
+      ref:"#our-services",
+      title:"Servicios"
+    },
+    {
+      id:"nav03",
+      class:"nav-button-a",
+      ref:"#plan",
+      title:"Planes"
+    },
+    {
+      id:"nav04",
+      class:"nav-button-a",
+      ref:"#witness",
+      title:"Testimonios"
+    },
+    {
+      id:"nav05",
+      class:"nav-button-a",
+      ref:"#faq",
+      title:"FAQ"
+    },
+    {
+      id:"nav06",
+      class:"nav-button-a",
+      ref:"#contact",
+      title:"Contacto"
+    },
+  ]
+
   return (
     <>
       <Button className='btn-drawer-menu m-5' onClick={showDrawer}>
@@ -25,11 +64,14 @@ export default function Menu() {
       </Button>
       <Drawer title="Art Set | Desarrollo Web y Movil" placement="right"  onClose={onClose} open={open}>
         <div className='div-drawer-menu'>
+          {
+            arrayNav.map((a)=><a key={a.id} className={`${a.class} nav-button-menu`} href={a.ref}> {a.title} </a>)
+          }
+        {/* <a className="nav-button-a nav-button-menu" href="#we-are">Quiénes Somos</a>
         <a className="nav-button-a nav-button-menu" href="#our-services">Servicios</a>
-        <a className="nav-button-a nav-button-menu" href="#we-are">Quiénes Somos</a>
         <a className="nav-button-a nav-button-menu" href="https://google.com">Marketing Digital</a>
         <a className="nav-button-a nav-button-menu" href="https://google.com">Productos</a>
-        <a className="nav-button-a nav-button-menu" href="https://google.com">Contacto</a>
+        <a className="nav-button-a nav-button-menu" href="https://google.com">Contacto</a> */}
         <a className="ingreso-btn shadow nav-button-menu" href="http://">Ingreso</a>
         <a className="nav-button shadow" href="http://">Registro</a>
 

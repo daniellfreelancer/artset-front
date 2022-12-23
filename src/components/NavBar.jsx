@@ -10,6 +10,45 @@ import Menu from "./Menu";
 
 export default function NavBar(props) {
   let myTheme = props.theme;
+
+  const arrayNav = [
+    {
+      id:"nav01",
+      class:"nav-button-a",
+      ref:"#we-are",
+      title:"Quiénes Somos"
+    },
+    {
+      id:"nav02",
+      class:"nav-button-a",
+      ref:"#our-services",
+      title:"Servicios"
+    },
+    {
+      id:"nav03",
+      class:"nav-button-a",
+      ref:"#plan",
+      title:"Planes"
+    },
+    {
+      id:"nav04",
+      class:"nav-button-a",
+      ref:"#witness",
+      title:"Testimonios"
+    },
+    {
+      id:"nav05",
+      class:"nav-button-a",
+      ref:"#faq",
+      title:"FAQ"
+    },
+    {
+      id:"nav06",
+      class:"nav-button-a",
+      ref:"#contact",
+      title:"Contacto"
+    },
+  ]
   return (
     <nav className="div-nav">
       <div className="div-logo p-5">
@@ -20,11 +59,9 @@ export default function NavBar(props) {
       </div>
 
       <div className="div-buttons p-5">
-        <a className="nav-button-a" href="#our-services">Servicios</a>
-        <a className="nav-button-a" href="#we-are">Quiénes Somos</a>
-        <a className="nav-button-a" href="https://google.com">Marketing Digital</a>
-        <a className="nav-button-a " href="https://google.com">Productos</a>
-        <a className="nav-button-a " href="https://google.com">Contacto</a>
+        {
+          arrayNav.map((a)=><a key={a.id} className={a.class} href={a.ref}>{a.title}</a>)
+        }
         <a className="ingreso-btn shadow" href="http://">Ingreso</a>
         <a className="nav-button shadow" href="http://">Registro</a>
 
