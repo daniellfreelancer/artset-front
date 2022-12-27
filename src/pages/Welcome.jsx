@@ -1,6 +1,8 @@
 import React from 'react'
 import Banner01 from '../components/Banner01'
 import CallToAction from '../components/CallToAction'
+import Contact from '../components/Contact'
+import FAQ from '../components/FAQ'
 import OurServices from '../components/OurServices'
 import WeAre from '../components/WeAre'
 import Layout from '../layout/Layout'
@@ -19,6 +21,8 @@ tecnologias
 testimonios
 contacto
 */}
+<FAQ/>
+<Contact/>
 </Layout>
   )
 }

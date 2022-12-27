@@ -1,0 +1,36 @@
+.div-container-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0rem;
+    gap: 2rem;
+}
+.btn-contact{
+    border-radius: 5px;
+    width: 100%;
+}
+.input-text-area{
+    height: auto;
+}
+
+
+.input-contact{
+    border-radius: 5px;
+    width: 40rem !important;
+}
+
+
+@media (max-width:768px) {
+    .input-contact{
+        width: 100%;
+    }
+}
+
+@media (max-width:425px) {
+    .input-contact{
+        width: 19rem !important;
+    }
+    .div-form{
+        padding: 0 !important;
+    }
+}
