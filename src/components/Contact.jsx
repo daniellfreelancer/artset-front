@@ -56,7 +56,7 @@ export default function Contact() {
 
 
   return (
-    <div className="container div-container-contact">
+    <div className="container div-container-contact py-5">
       <h4>¿ Tenés dudas ? Contáctanos</h4>
 
       <form className="shadow-lg p-5 div-form" id="contact">
