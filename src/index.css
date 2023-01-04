@@ -33,3 +33,11 @@ body {
 #dark .btn-drawer-menu {
   color: #f3ebf6;
 }
+
+#dark p{
+  font-weight: 300 !important;
+}
+
+#light p{
+  font-weight: 400 !important;
+}
