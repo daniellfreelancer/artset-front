@@ -92,8 +92,11 @@ padding: 1rem 1rem;
     }
 }
 
-@media (max-width:320px) {
+@media (max-width:375px) {
     .input-field{
         width: 11rem;
+    }
+    .div-footer-first{
+        width: 100% !important;
     }
 }

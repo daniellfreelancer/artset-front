@@ -5,9 +5,8 @@
     align-items:center;
 }
 
-.img-principal {
-    width: 50%;
-
+.img-carousel-01{
+    width: 30%;
 }
 .title-call{
     font-weight: bold;
@@ -31,9 +30,10 @@
         flex-direction: column;
         height: 100%;
     }
-    .img-principal{
+    .img-carousel-01{
         display: none;
     }
+
     .div-container-text-call{
         display: flex;
         flex-direction: column;
