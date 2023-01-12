@@ -1,7 +1,9 @@
 import React from "react";
 import ReactSwitch from "react-switch";
-import ASLogo from "../assets/artsetLogo.png";
-import ASLogoLight from "../assets/artsetLogoDark.png";
+// import ASLogo from "../assets/artsetLogo.png";
+// import ASLogoLight from "../assets/artsetLogoDark.png";
+import ASLogo from "../assets/artsetLogoModoLight.png";
+import ASLogoLight from "../assets/artsetLogoModoDark.png";
 import '../styles/Navbar.css'
 import sun from '../assets/sun.png'
 import moon from '../assets/moon.png'
@@ -66,7 +68,7 @@ export default function NavBar(props) {
         <a className="nav-button shadow" href="http://">Registro</a>
 
       <div className="switch div-switch">
-        <label> {myTheme === "light" ? ( <img className="icon-dark-mode" src={sun} alt="sun"/> ) : ( <img className="icon-dark-mode" src={moon} alt="moon"/> )}</label>
+        <label> {myTheme === "light" ?  ( <img className="icon-dark-mode" src={moon} alt="moon"/> ) : ( <img className="icon-dark-mode" src={sun} alt="sun"/> )}</label>
         <ReactSwitch
           onChange={props.onChange}
           checked={myTheme === "dark"}

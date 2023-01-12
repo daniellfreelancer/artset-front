@@ -1,8 +1,8 @@
 import React, { useContext, useRef } from "react";
 import { ThemeContext } from "../layout/Layout";
 import "../styles/Footer.css";
-import ASLogo from "../assets/artsetLogo.png";
-import ASLogoLight from "../assets/artsetLogoDark.png";
+import ASLogo from "../assets/artsetLogoModoLight.png";
+import ASLogoLight from "../assets/artsetLogoModoDark.png";
 import facebookLogo from '../assets/facebook.png';
 import instagramLogo from '../assets/instagram.png';
 import twitterLogo from '../assets/gorjeo.png';
