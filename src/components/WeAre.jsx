@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import logoTextDark from "../assets/artsetTextDark.svg";
-import logoTextLight from "../assets/artsetTextLight.svg";
+import logoTextDark from "../assets/artsetDarkOnly.svg";
+import logoTextLight from "../assets/artsetLigthOnly.svg";
 import { ThemeContext } from "../layout/Layout";
 import "../styles/Weare.css";
 

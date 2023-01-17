@@ -90,6 +90,9 @@ padding: 1rem 1rem;
     .div-footer-first{
         padding: 0rem 2rem;
     }
+    .div-footer-second ul li a{
+        font-weight: 300;
+    }
 }
 
 @media (max-width:375px) {
