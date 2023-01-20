@@ -6,17 +6,26 @@ export default function CallToAction() {
   return (
     <div className="div-container-call">
       <div className="div-container-text-call p-5">
-        <h1 className="title-call py-2">Digitaliza tu negocio</h1>
-        <h3>¿ Sos PYME o Emprendedor ?</h3>
-        <p className="text-call py-2">
+        {/* <h1 className="title-call py-2">Digitaliza tu negocio</h1> */}
+        <h1 className="title-call py-2">¿Quieres digitalizar tu negocio?</h1>
+        {/* <h3>¿ Sos PYME o Emprendedor ?</h3> */}
+        {/* <p className="text-call py-2">
           El equipo de <strong className="title-strong">Art Set</strong> tiene
           lo mejor para vos, incrementa valor a tu negocio con presencia en
           internet. Desarrollamos tu sitio WEB, Tienda On-line, Aplicación Móvil
           y mucho más.{" "}
+        </p> */}
+        <p className="text-call py-2">
+        Si eres una PYME o emprendedor, <strong className="title-strong">el equipo de Art Set</strong> tiene lo que necesitas para mejorar tu presencia en internet y aumentar el valor de tu negocio. Ofrecemos servicios de desarrollo de sitios web, tiendas en línea, aplicaciones móviles y mucho más. Con nuestra experiencia y conocimientos, te ayudaremos a maximizar tu alcance en línea y a atraer a más clientes potenciales.
         </p>
-        <div className="py-3">
+        {/* <div className="py-3">
           <a href="www.google.com" className="nav-button button-call">
             Elegí tu plan
+          </a>
+        </div> */}
+        <div className="py-3">
+          <a href="www.google.com" className="nav-button button-call">
+          ¡Contáctanos hoy mismo! 
           </a>
         </div>
       </div>

@@ -61,7 +61,7 @@ export default function Contact() {
 
       <form className="shadow-lg p-5 div-form" id="contact">
       <div className="mb-3">
-          <label for="exampleFormControlInput1" className="form-label">
+          <label htmlFor="exampleFormControlInput1" className="form-label">
             Nombre y Apellido
           </label>
           <input
@@ -73,7 +73,7 @@ export default function Contact() {
           />
         </div>
         <div className="mb-3">
-          <label for="exampleFormControlInput1" className="form-label">
+          <label htmlFor="exampleFormControlInput1" className="form-label">
             Correo Electrónico
           </label>
           <input
@@ -85,7 +85,7 @@ export default function Contact() {
           />
         </div>
         <div className="mb-3">
-          <label for="exampleFormControlTextarea1" className="form-label">
+          <label htmlFor="exampleFormControlTextarea1" className="form-label">
             Consulta
           </label>
           <textarea
