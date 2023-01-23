@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Calltoaction.css";
 import imgCallToAction from "../assets/Project.svg";
-// import ReactTyped from "react-typed";
+import ReactTyped from "react-typed";
 
 export default function CallToAction() {
 
@@ -16,11 +16,11 @@ export default function CallToAction() {
         {/* <h1 className="title-call py-2">Digitaliza tu negocio</h1> */}
         <h1 className="title-call py-2">¿Quieres digitalizar tu negocio?</h1>
         {/* <h3>¿ Sos PYME o Emprendedor ?</h3> */}
-        {/* <ReactTyped className="title-call py-2"
+        <ReactTyped className="title-call py-2"
                     strings={['¿Quieres digitalizar tu negocio?', 'Incrementar tu presencia online', '¿Llevarlo al siguiente nivel?', 'ARTSET Desarrollo Web y Digital ']}
                     typeSpeed={50}
                     backSpeed={50}
-                /> */}
+                />
       
         {/* <p className="text-call py-2">
           El equipo de <strong className="title-strong">Art Set</strong> tiene
