@@ -17,7 +17,8 @@
     "react-switch": "^7.0.0",
     "redux": "^4.2.0",
     "sweetalert2": "^11.6.16",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "react-typed": "^1.2.0"
   },
   "scripts": {
     "start": "react-scripts start",

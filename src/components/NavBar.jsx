@@ -64,8 +64,8 @@ export default function NavBar(props) {
         {
           arrayNav.map((a)=><a key={a.id} className={a.class} href={a.ref}>{a.title}</a>)
         }
-        <a className="ingreso-btn shadow" href="http://">Ingreso</a>
-        <a className="nav-button shadow" href="http://">Registro</a>
+        {/* <a className="ingreso-btn shadow" href="http://">Ingreso</a>
+        <a className="nav-button shadow" href="http://">Registro</a> */}
 
       <div className="switch div-switch">
         <label> {myTheme === "light" ?  ( <img className="icon-dark-mode" src={moon} alt="moon"/> ) : ( <img className="icon-dark-mode" src={sun} alt="sun"/> )}</label>
