@@ -1,0 +1,28 @@
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    
+  }
+
+
+  
+  .btn-whatsapp {
+    background-color: transparent !important;
+    background-image: url('../assets/whatsapp.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* border-radius: 50%; */
+    border: none;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .btn-whatsapp:hover{
+    /* transform: scale(1.1); */
+    transform: translate(0, -5px);
+    transition-duration:1s;
+
+  }

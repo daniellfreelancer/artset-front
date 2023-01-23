@@ -12,7 +12,7 @@ export default function OurServices() {
             src:icon001,
             alt:"web icon",
             title:"Diseño Web",
-            text:"Diseñamos tu sitio web desde cero, todos nuestros planes incluyen Hosting y Dominio gratis."
+            text:"Diseñamos tu sitio web desde cero, con un enfoque en la experiencia del usuario y la conversión, para maximizar el rendimiento de tu sitio web."
         },
 
         {
@@ -41,7 +41,7 @@ export default function OurServices() {
     <div id="our-services">
         <div className="div-our-services mt-5 mb-3">
             <h2>Nuestros Servicios</h2>
-            <h5 className="px-4">Ofrecemos diferentes tipos de servicios Digitales y Marketing para tu negocio, a un precio ideal.</h5>
+            <h5 className="px-4">Ofrecemos servicios personalizados y adaptados a las necesidades de tu negocio, a precios accesibles.</h5>
             <div className="div-line-services"></div>
         </div>
 
@@ -53,7 +53,7 @@ export default function OurServices() {
                     <div className="div-card-service p-3" key={e.id}>
                     <img className="img-icon-services" src={e.src} alt="web icon" />
                     <h3>{e.title}</h3>
-                    <p className="text-service">
+                    <p className="text-service text-justify">
                       {e.text}
                     </p>
                   </div>

@@ -1,6 +1,7 @@
 import React, { createContext, useState } from 'react'
 import Footer from '../components/Footer'
 import NavBar from '../components/NavBar'
+import WhatsappContact from '../components/WhatsappContact';
 
 
 export const ThemeContext = createContext(null);
@@ -18,6 +19,7 @@ export default function Layout({children}) {
     <div className="App" id={theme}>
     <NavBar onChange={toggleTheme} theme={theme} />
         {children}
+        <WhatsappContact/>
     <Footer/>
     </div>
     </ThemeContext.Provider>
