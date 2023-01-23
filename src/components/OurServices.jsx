@@ -38,7 +38,7 @@ export default function OurServices() {
         }
     ]
   return (
-    <div id="our-services">
+    <div id="our-services" className="mt-5">
         <div className="div-our-services mt-5 mb-3">
             <h2>Nuestros Servicios</h2>
             <h5 className="px-4">Ofrecemos servicios personalizados y adaptados a las necesidades de tu negocio, a precios accesibles.</h5>

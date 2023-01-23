@@ -44,7 +44,7 @@ export default function CallToAction() {
         </div> */}
         <div className="py-3">
           <a href="#contact" className="nav-button button-call">
-            ¡Contáctanos hoy mismo!
+            ¡Contáctanos!
           </a>
         </div>
       </div>

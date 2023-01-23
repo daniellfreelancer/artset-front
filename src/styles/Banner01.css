@@ -22,6 +22,14 @@
     background-size: cover;
     
 }
+.div-img-banner02{
+    width: 50%;
+    background-image: url('../assets/branding.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
 .div-card-banner01{
     display: flex;
     flex-direction: column;
@@ -38,10 +46,13 @@
 }
 
 @media (max-width:768px) {
+    .div-banner02{
+        flex-direction: column-reverse !important;
+    }
     .div-banner01{
         flex-direction: column;
-        align-items: center;
-        margin-bottom: 3rem;
+        /* align-items: center;
+        margin-bottom: 3rem; */
         height: 100% !important;
         margin-top: 0 !important;
     }
@@ -49,9 +60,19 @@
         width: 100%;
         height: auto;
     }
+    .div-img-banner01{
+        height: 50vh;
+        background-size: cover;
+        width: 100%;
+    }
+    .div-img-banner02{
+        height: 50vh;
+        background-size: cover;
+        width: 100%;
+    }
 
     .div-img-banner01{
-        display: none !important;
+        /* display: none !important; */
     }
     .text-banner01{
         width: 100%;

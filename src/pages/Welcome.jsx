@@ -7,6 +7,7 @@ import IncludeFeatures from '../components/IncludeFeatures'
 import OurServices from '../components/OurServices'
 import WeAre from '../components/WeAre'
 import Layout from '../layout/Layout'
+import Banner02 from '../components/Banner02'
 
 export default function Welcome(props) {
   return (
@@ -14,8 +15,10 @@ export default function Welcome(props) {
     <CallToAction/>
     <WeAre/>
     <Banner01/>
+    <Banner02/>
     <OurServices/>
     <IncludeFeatures/>
+
 {/* 
 planes
 faq

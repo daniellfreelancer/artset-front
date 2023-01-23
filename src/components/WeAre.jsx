@@ -17,7 +17,7 @@ export default function WeAre() {
       </h5>
       <div className="div-line-services"></div>
       <div className="div-quienes-somos-img-card py-5">
-        <div className="img-quienes-somos"></div>
+        {/* <div className="img-quienes-somos"></div> */}
         <div className="div-card-quienes p-5">
           {theme === "dark" ? (
             <img className="img-logo-text" src={logoTextDark} alt="web icon" />
