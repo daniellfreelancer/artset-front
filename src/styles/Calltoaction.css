@@ -4,6 +4,9 @@
     justify-content: space-evenly;
     align-items:center;
 }
+#text-call-to{
+    display: none;
+}
 
 .img-carousel-01{
     width: 30%;
@@ -66,6 +69,12 @@ h1{
 @media (max-width:768px){
     .div-container-text-call{
         width: 80%;
+    }
+    #text-call-to{
+        display: inline-block;
+    }
+    .text-call-type {
+        display: none !important;
     }
 }
 

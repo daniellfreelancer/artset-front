@@ -1,0 +1,43 @@
+.item-check{
+    width: 2rem;
+    height: 2rem;
+}
+
+.div-card-best{
+    border: 2px solid  #2fcd00;;
+    border-radius: 10px;
+    width: 20rem;
+    padding: 1rem 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.div-listed-include {
+    display: flex;
+    align-items: baseline;
+}
+.div-listed-include p{
+    align-self: flex-end !important;
+}
+
+.div-btn-comprar{
+    display: flex;
+    justify-content: center;
+    justify-self: flex-end;
+
+}
+
+.btn-comprar {
+    transform: translateY(2rem);
+    width: 60%;
+    border-radius: 30px;
+    background:#f3ebf6;
+    border: 2px solid #2fcd00;
+}
+.btn-comprar:hover{
+    background: linear-gradient(180deg, #2fcd00 5%, #71d650 95%);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+

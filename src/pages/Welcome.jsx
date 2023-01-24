@@ -8,6 +8,7 @@ import OurServices from '../components/OurServices'
 import WeAre from '../components/WeAre'
 import Layout from '../layout/Layout'
 import Banner02 from '../components/Banner02'
+import BestSellers from '../components/BestSellers'
 
 export default function Welcome(props) {
   return (
@@ -18,6 +19,7 @@ export default function Welcome(props) {
     <Banner02/>
     <OurServices/>
     <IncludeFeatures/>
+    <BestSellers/>
 
 {/* 
 planes
