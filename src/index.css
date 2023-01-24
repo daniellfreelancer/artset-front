@@ -9,29 +9,29 @@ body {
 
 
 #light {
-  background-color: #f3ebf6;
+  background-color: #fbfbfe;
   color:#1f1e20;
 }
 
 #light a {
-  background-color: #f3ebf6;
+  background-color: #fbfbfe;
   color:#1f1e20;
   text-decoration: none;
 }
 
 #dark {
   background-color: #1f1e20;
-  color: #f3ebf6;
+  color: #fbfbfe;
 }
 
 #dark a {
   background-color: #1f1e20;
-  color: #f3ebf6;
+  color: #fbfbfe;
   text-decoration: none;
 }
 
 #dark .btn-drawer-menu {
-  color: #f3ebf6;
+  color: #fbfbfe;
 }
 
 #dark p{
