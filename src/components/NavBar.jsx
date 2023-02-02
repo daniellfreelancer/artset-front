@@ -1,9 +1,7 @@
 import React from "react";
 import ReactSwitch from "react-switch";
-// import ASLogo from "../assets/artsetLogo.png";
-// import ASLogoLight from "../assets/artsetLogoDark.png";
-import ASLogo from "../assets/artsetLogoModoLight.png";
-import ASLogoLight from "../assets/artsetLogoModoDark.png";
+import ASLogo from "../assets/artsetLogoModoLight.webp";
+import ASLogoLight from "../assets/artsetLogoModoDark.webp";
 import '../styles/Navbar.css'
 import sun from '../assets/sun.png'
 import moon from '../assets/moon.png'
@@ -32,12 +30,12 @@ export default function NavBar(props) {
       ref:"#plan",
       title:"Planes"
     },
-    {
-      id:"nav04",
-      class:"nav-button-a",
-      ref:"#witness",
-      title:"Testimonios"
-    },
+    // {
+    //   id:"nav04",
+    //   class:"nav-button-a",
+    //   ref:"#witness",
+    //   title:"Testimonios"
+    // },
     {
       id:"nav05",
       class:"nav-button-a",

@@ -4,7 +4,7 @@
 }
 
 .div-card-best{
-    border: 2px solid  #2fcd00;;
+    border: .1rem solid  #2fcd00;;
     border-radius: 10px;
     width: 20rem;
     padding: 1rem 1rem;
@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: fit-content;
 }
 .div-listed-include {
     display: flex;
@@ -25,6 +26,7 @@
     display: flex;
     justify-content: center;
     justify-self: flex-end;
+    width: auto;
 
 }
 
@@ -32,8 +34,9 @@
     transform: translateY(2rem);
     width: 60%;
     border-radius: 30px;
-    background:#f3ebf6;
+    background:#f3ebf6 !important;
     border: 2px solid #2fcd00;
+    color: #1f1e20 !important;
 }
 .btn-comprar:hover{
     background: linear-gradient(180deg, #2fcd00 5%, #71d650 95%);
@@ -44,3 +47,62 @@
 
 } */
 
+.icon-card{
+    width: 4.5rem;
+    margin: 1rem 0rem;
+}
+
+.price-text{
+    font-size: 10pt;
+    font-weight: 100 !important;
+    position: relative;
+    padding: 0 !important;
+    
+}
+
+.price-title{
+    font-size: 3rem ;
+    text-shadow: 1px 1px 10px #888;
+    padding: 0 !important;
+}
+
+.card-central{
+    height: 41.5rem;
+}
+
+.div-best-sellers{
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 3rem;
+    justify-content: center;
+}
+.link-comprar{
+    width: 100%;
+}
+.div-card-best div h2{
+    font-weight: bold;
+}
+
+.div-card-best:hover{
+    transform: scale(105%);
+    cursor: pointer;
+    transition: 1s ease ;
+    background: radial-gradient(circle at bottom right, rgb(5, 255, 21), #fff);
+    color: #1f1e20;
+}
+
+
+@media (max-width:1024px) {
+    .div-best-sellers{
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width:768px){
+    .div-card-best{
+        width: 80%;
+    }
+} 
