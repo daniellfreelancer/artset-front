@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Calltoaction.css";
-import imgCallToAction from "../assets/Project.svg";
+import imgCallToAction from "../assets/App5.svg";
 import ReactTyped from "react-typed";
 
 export default function CallToAction() {
