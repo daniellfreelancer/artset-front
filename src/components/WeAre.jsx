@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import logoTextDark from "../assets/artsetDarkOnly.svg";
-import logoTextLight from "../assets/artsetLigthOnly.svg";
 import { ThemeContext } from "../layout/Layout";
 import "../styles/Weare.css";
+import LogoDark from "./LogoDark";
+import LogoLight from "./LogoLight";
 
 export default function WeAre() {
   const myContext = useContext(ThemeContext);
@@ -20,9 +20,9 @@ export default function WeAre() {
         {/* <div className="img-quienes-somos"></div> */}
         <div className="div-card-quienes p-5">
           {theme === "dark" ? (
-            <img className="img-logo-text" src={logoTextDark} alt="web icon" />
+            <LogoDark />
           ) : (
-            <img className="img-logo-text" src={logoTextLight} alt="web icon" />
+            <LogoLight />
           )}
           <p>
             Nuestra agencia ofrece soluciones profesionales de desarrollo web,

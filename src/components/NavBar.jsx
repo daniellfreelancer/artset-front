@@ -1,11 +1,11 @@
 import React from "react";
 import ReactSwitch from "react-switch";
-import ASLogo from "../assets/artsetLogoModoLight.webp";
-import ASLogoLight from "../assets/artsetLogoModoDark.webp";
 import '../styles/Navbar.css'
 import sun from '../assets/sun.png'
 import moon from '../assets/moon.png'
 import Menu from "./Menu";
+import LogoLight from "./LogoLight";
+import LogoDark from "./LogoDark";
 
 
 export default function NavBar(props) {
@@ -30,12 +30,6 @@ export default function NavBar(props) {
       ref:"#plan",
       title:"Planes"
     },
-    // {
-    //   id:"nav04",
-    //   class:"nav-button-a",
-    //   ref:"#witness",
-    //   title:"Testimonios"
-    // },
     {
       id:"nav05",
       class:"nav-button-a",
@@ -53,7 +47,7 @@ export default function NavBar(props) {
     <nav className="div-nav">
       <div className="div-logo p-5">
         {
-            myTheme === "light" ? (<img className="img-logo" src={ASLogo} alt="logo Art Set" />) : <img  className="img-logo" src={ASLogoLight} alt="logo Art Set" />
+            myTheme === "light" ? (<LogoLight/>) : <LogoDark/>
         }
         
       </div>
@@ -87,7 +81,7 @@ export default function NavBar(props) {
 
       <Menu/>
       <span className="span-swicth">
-      <label> {myTheme === "light" ? ( <img className="icon-dark-mode" src={sun} alt="sun"/> ) : ( <img className="icon-dark-mode" src={moon} alt="moon"/> )}</label>
+      <label> {myTheme === "light" ? ( <img className="icon-dark-mode" src={moon} alt="sun"/> ) : ( <img className="icon-dark-mode" src={sun} alt="moon"/> )}</label>
         <ReactSwitch
           onChange={props.onChange}
           checked={myTheme === "dark"}

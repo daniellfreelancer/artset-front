@@ -1,0 +1,28 @@
+.div-logo{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    cursor: pointer;
+}
+.logo-hex{
+    width: 4rem;
+}
+
+.text-title-logo{
+    font-size: 35pt !important;
+    font-weight: bold;
+}
+.logo-hex{
+    transition: transform 1s ease-out;
+}
+
+.div-logo:hover{
+    text-shadow: 1px 1px 1px lightgray;
+    transform: scale(102%);
+    transition: 1s ease-out;
+}
+
+
+.div-logo .logo-hex:hover{
+transform: rotate(180deg);
+}

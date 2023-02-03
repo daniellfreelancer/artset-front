@@ -1,14 +1,14 @@
 import React, { useContext, useRef } from "react";
 import { ThemeContext } from "../layout/Layout";
 import "../styles/Footer.css";
-import ASLogo from "../assets/artsetLogoModoLight.png";
-import ASLogoLight from "../assets/artsetLogoModoDark.png";
 import facebookLogo from '../assets/facebook.png';
 import instagramLogo from '../assets/instagram.png';
 import twitterLogo from '../assets/gorjeo.png';
 import linkedinLogo from '../assets/linkedin.png';
 import { useCreateEmailMutation } from "../features/emailAPI";
 import swal from 'sweetalert2';
+import LogoLight from "./LogoLight";
+import LogoDark from "./LogoDark";
 
 export default function Footer() {
   const myContext = useContext(ThemeContext);
@@ -58,9 +58,9 @@ export default function Footer() {
     <div className="div-footer-global pt-5">
       <div className="div-footer-first col-lg-3">
         {myTheme === "light" ? (
-          <img className="img-logo" src={ASLogo} alt="logo Art Set" />
+          <LogoLight/>
         ) : (
-          <img className="img-logo" src={ASLogoLight} alt="logo Art Set" />
+          <LogoDark />
         )}
       </div>
       <div className="div-footer-second col-lg-3 px-5">

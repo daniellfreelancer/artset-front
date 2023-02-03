@@ -21,7 +21,7 @@ export default function CallToAction() {
         />
         <p className="text-call py-2">
           Si eres una PYME o emprendedor,{" "}
-          <strong className="title-strong">el equipo de Art Set</strong> tiene
+          <strong className="title-strong">el equipo de ArtSet</strong> tiene
           lo que necesitas para mejorar tu presencia en internet y aumentar el
           valor de tu negocio. Ofrecemos servicios de desarrollo de sitios web,
           tiendas en línea, aplicaciones móviles y mucho más. Con nuestra

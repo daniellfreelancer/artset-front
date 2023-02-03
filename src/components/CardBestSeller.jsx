@@ -3,7 +3,7 @@ import "../styles/Cardbestseller.css";
 import checkIT from "../assets/checkD.png";
 import website from '../assets/sitio-web.png'
 import tienda from '../assets/venta.png'
-import landing from '../assets/landing-page.png'
+import landing from '../assets/landingPage.png'
 
 export default function CardBestSeller() {
   return (

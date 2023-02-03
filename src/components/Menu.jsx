@@ -38,12 +38,6 @@ export default function Menu() {
       title:"Planes"
     },
     {
-      id:"nav04",
-      class:"nav-button-a",
-      ref:"#witness",
-      title:"Testimonios"
-    },
-    {
       id:"nav05",
       class:"nav-button-a",
       ref:"#faq",
