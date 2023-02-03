@@ -1,0 +1,33 @@
+
+.div-img-partners{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.logo-partners{
+    width: 10rem;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.logo-partners:hover{
+    transform: scale(103%);
+    
+}
+
+.title-partners{
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (max-width:425px) {
+
+    .logo-partners{
+        width: 12rem;
+    }
+    
+}
+
+
+

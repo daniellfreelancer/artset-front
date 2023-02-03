@@ -56,7 +56,7 @@ export default function Contact() {
 
 
   return (
-    <div className="container div-container-contact py-5">
+    <div className="container div-container-contact py-5 mt-5">
       <h4>¿ Tenés dudas ? Contáctanos</h4>
 
       <form className="shadow-lg p-5 div-form" id="contact">
@@ -97,7 +97,7 @@ export default function Contact() {
           ></textarea>
         </div>
         <div className="mb-3">
-            <button onClick={handleContactForm} className="btn-suscribe shadow-lg btn-contact" >Enviar</button>
+            <button onClick={handleContactForm} className="btn-suscribe shadow-lg btn-contact" >Pedí tu presupuesto gratis</button>
         </div>
       </form>
     </div>

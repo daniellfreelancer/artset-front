@@ -13,7 +13,7 @@ export default function CardBestSeller() {
     <div className="div-card-best shadow-lg">
       <div className="text-center">
         <img src={landing} alt="tienda online" className="icon-card" />
-        <h2 id="title-item-one">Landing Page</h2>
+        <h2 id="title-item-one"> <strong>Landing Page</strong> </h2>
         <p>Transforma tus visitantes en clientes potenciales</p>
       </div>
       <div className="text-center pt-2">
@@ -24,11 +24,11 @@ export default function CardBestSeller() {
       <div>
         <div className="div-listed-include">
           <img src={checkIT} alt="item" className="item-check" />
-          <p>Dominio com.ar</p>
+          <p><strong>Dominio</strong> com.ar</p>
         </div>
         <div className="div-listed-include">
           <img src={checkIT} alt="item" className="item-check" />
-          <p>Hosting web</p>
+          <p><strong>Hosting</strong> web</p>
         </div>
         <div className="div-listed-include">
           <img src={checkIT} alt="item" className="item-check" />
@@ -40,7 +40,7 @@ export default function CardBestSeller() {
         </div>{" "}
         <div className="div-listed-include">
           <img src={checkIT} alt="item" className="item-check" />
-          <p>Link a Whatsapp</p>
+          <p>Link a <strong>Whatsapp</strong></p>
         </div>
       </div>
       <div className="div-btn-comprar">
@@ -52,7 +52,7 @@ export default function CardBestSeller() {
     <div className="div-card-best card-central shadow-lg">
       <div className="text-center">
         <img src={tienda} alt="tienda online" className="icon-card" />
-        <h2>Tienda OnLine</h2>
+        <h2 id="title-item-one"> <strong>Tienda OnLine</strong> </h2>
         <p>Crea un nuevo canal de ventas a través de internet</p>
       </div>
       <div className="text-center pt-2">
@@ -63,11 +63,11 @@ export default function CardBestSeller() {
       <div>
         <div className="div-listed-include">
           <img src={checkIT} alt="item" className="item-check" />
-          <p>Dominio com.ar</p>
+          <p><strong>Dominio</strong> com.ar</p>
         </div>
         <div className="div-listed-include">
           <img src={checkIT} alt="item" className="item-check" />
-          <p>Hosting web</p>
+          <p><strong>Hosting</strong> web</p>
         </div>
         <div className="div-listed-include">
           <img src={checkIT} alt="item" className="item-check" />
@@ -79,7 +79,7 @@ export default function CardBestSeller() {
         </div>{" "}
         <div className="div-listed-include">
           <img src={checkIT} alt="item" className="item-check" />
-          <p>Usuario Administrador</p>
+          <p><strong>Base de datos</strong></p>
         </div>
         <div className="div-listed-include">
           <img src={checkIT} alt="item" className="item-check" />
@@ -87,7 +87,7 @@ export default function CardBestSeller() {
         </div>
         <div className="div-listed-include">
           <img src={checkIT} alt="item" className="item-check" />
-          <p>Link a Whatsapp</p>
+          <p>Link a <strong>Whatsapp</strong></p>
         </div>
       </div>
       <div className="div-btn-comprar">
@@ -99,7 +99,7 @@ export default function CardBestSeller() {
     <div className="div-card-best shadow-lg">
       <div className="text-center">
         <img src={website} alt="tienda online" className="icon-card" />
-        <h2>Sitio Web</h2>
+        <h2 id="title-item-one"> <strong>Sitio Web</strong></h2>
         <p>Posiciona y digitaliza tu Marca en internet</p>
       </div>
       <div className="text-center pt-2">
@@ -110,11 +110,11 @@ export default function CardBestSeller() {
       <div>
         <div className="div-listed-include">
           <img src={checkIT} alt="item" className="item-check" />
-          <p>Dominio com.ar</p>
+          <p><strong>Dominio</strong> com.ar</p>
         </div>
         <div className="div-listed-include">
           <img src={checkIT} alt="item" className="item-check" />
-          <p>Hosting web</p>
+          <p><strong>Hosting</strong> web</p>
         </div>
         <div className="div-listed-include">
           <img src={checkIT} alt="item" className="item-check" />
@@ -126,7 +126,7 @@ export default function CardBestSeller() {
         </div>{" "}
         <div className="div-listed-include">
           <img src={checkIT} alt="item" className="item-check" />
-          <p>Link a Whatsapp</p>
+          <p>Link a <strong>Whatsapp</strong></p>
         </div>
       </div>
       <div className="div-btn-comprar">
