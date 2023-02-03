@@ -71,7 +71,7 @@
         width: 100%;
     }
 
-    .div-img-banner02{
+    .div-img-banner02 , .div-img-banner01{
         display: none !important;
     }
     .text-banner01{
