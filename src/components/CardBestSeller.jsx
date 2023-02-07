@@ -4,8 +4,48 @@ import checkIT from "../assets/checkD.png";
 import website from '../assets/sitio-web.png'
 import tienda from '../assets/venta.png'
 import landing from '../assets/landingPage.png'
+import { useState } from "react";
+import { useEffect } from "react";
+import axios from "axios";
 
 export default function CardBestSeller() {
+
+  const [dolar, setDolar] = useState()
+  const [landingMonth, setLandingMonth] = useState()
+  const [webSite, setWebSite] = useState()
+  const [ecommerce, setEcommerce] = useState()
+
+const [landingState, setLandingState] = useState(true)
+const [ecommerceState, setEcommerceState] = useState(true)
+const [websiteState, setWebsiteState] = useState(true)
+ 
+
+
+  useEffect(() => {
+
+      const intervailId = setInterval(()=>{
+          axios.get('https://criptoya.com/api/dolar').then((res)=>{
+              if (res.data){
+                  let dataReceive = res.data
+                  setDolar(dataReceive.oficial)
+                  let landingPerMonth = dataReceive.oficial * 90;
+                  let websitePerMonth = dataReceive.oficial * 140;
+                  let ecommercePerMonth = dataReceive.oficial * 240;
+                  setLandingMonth(landingPerMonth)
+                  setWebSite(websitePerMonth)
+                  setEcommerce(ecommercePerMonth)
+                  console.log(dolar)
+                  
+
+              }
+
+          }).catch((error)=>console.log(error))
+      },1000)
+      return()=>{
+          clearInterval(intervailId)
+      }
+  }, [dolar])
+  
   return (
     <div id="plan" className="div-best-sellers">
 
@@ -17,8 +57,15 @@ export default function CardBestSeller() {
         <p>Transforma tus visitantes en clientes potenciales</p>
       </div>
       <div className="text-center pt-2">
-        <h4 className="price-title">AR$ 2.990</h4>
-        <p className="price-text">Precio por mes</p>
+        {
+          landingMonth ? (        <h4 className="price-title">Ar$ {landingState ? parseInt(landingMonth / 12 *0.30 + landingMonth / 12).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')  : parseInt(landingMonth).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.') }</h4>) : null
+        }
+
+        <p className="price-text">Precio por {landingState ? 'mes' : 'único'} </p>
+        <div className="div-btn-price">
+          <button className={landingState ? 'nav-button' : 'btn-price' } onClick={()=>setLandingState(true)}  >Mes</button>
+          <button className={landingState ? 'btn-price' : 'nav-button' } onClick={()=>setLandingState(false)} >Único</button>
+        </div>
        
       </div>
       <div>
@@ -56,8 +103,16 @@ export default function CardBestSeller() {
         <p>Crea un nuevo canal de ventas a través de internet</p>
       </div>
       <div className="text-center pt-2">
-        <h4 className="price-title">AR$ 5.990</h4>
-        <p className="price-text">Precio por mes</p>
+        {
+          ecommerce ? (      <h4 className="price-title">Ar$ {ecommerceState ? parseInt(ecommerce / 12 *0.30 + ecommerce / 12).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')  : parseInt(ecommerce).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.') }</h4>) : null
+        }
+
+
+        <p className="price-text">Precio por {ecommerceState ? 'mes' : 'único'} </p>
+        <div className="div-btn-price">
+          <button className={ecommerceState ? 'nav-button' : 'btn-price' } onClick={()=>setEcommerceState(true)}  >Mes</button>
+          <button className={ecommerceState ? 'btn-price' : 'nav-button' } onClick={()=>setEcommerceState(false)} >Único</button>
+        </div>
        
       </div>
       <div>
@@ -103,8 +158,16 @@ export default function CardBestSeller() {
         <p>Posiciona y digitaliza tu Marca en internet</p>
       </div>
       <div className="text-center pt-2">
-        <h4 className="price-title">AR$ 4.990</h4>
-        <p className="price-text">Precio por mes</p>
+      {
+          webSite ? (      <h4 className="price-title">Ar$ {websiteState ? parseInt(webSite / 12 *0.30 + webSite / 12).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')  : parseInt(webSite).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.') }</h4>) : null
+        }
+
+
+        <p className="price-text">Precio por {websiteState ? 'mes' : 'único'} </p>
+        <div className="div-btn-price">
+          <button className={websiteState ? 'nav-button' : 'btn-price' } onClick={()=>setWebsiteState(true)}  >Mes</button>
+          <button className={websiteState ? 'btn-price' : 'nav-button' } onClick={()=>setWebsiteState(false)} >Único</button>
+        </div>
        
       </div>
       <div>

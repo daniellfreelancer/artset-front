@@ -65,9 +65,9 @@ export default function Menu() {
         <a className="nav-button-a nav-button-menu" href="#our-services">Servicios</a>
         <a className="nav-button-a nav-button-menu" href="https://google.com">Marketing Digital</a>
         <a className="nav-button-a nav-button-menu" href="https://google.com">Productos</a>
-        <a className="nav-button-a nav-button-menu" href="https://google.com">Contacto</a> */}
+        <a className="nav-button-a nav-button-menu" href="https://google.com">Contacto</a> 
         <a className="ingreso-btn shadow nav-button-menu" href="http://">Ingreso</a>
-        <a className="nav-button shadow" href="http://">Registro</a>
+        <a className="nav-button shadow" href="http://">Registro</a> */}
 
         </div>
 

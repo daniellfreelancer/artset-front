@@ -67,7 +67,7 @@
 }
 
 .card-central{
-    height: 41.5rem;
+    height: 45rem;
 }
 
 .div-best-sellers{
@@ -92,6 +92,19 @@
     background: radial-gradient(circle at bottom right, rgb(5, 255, 21), #fff);
     color: #1f1e20;
 }
+.div-btn-price{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.btn-price{
+    border: 1px solid #2fcd00;
+    padding: .3rem 2rem;
+    border-radius: 30px;
+}
+
 
 
 @media (max-width:1024px) {

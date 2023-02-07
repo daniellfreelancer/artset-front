@@ -9,6 +9,7 @@ import { useCreateEmailMutation } from "../features/emailAPI";
 import swal from 'sweetalert2';
 import LogoLight from "./LogoLight";
 import LogoDark from "./LogoDark";
+import StockUs from "./StockUs";
 
 export default function Footer() {
   const myContext = useContext(ThemeContext);
@@ -94,6 +95,9 @@ export default function Footer() {
           <a className="link-social-media" href="https://facebook.com" target="a_blank" rel="noreferrer" ><img src={twitterLogo} alt="social-media" className="social-media-icon" /></a>
           <a className="link-social-media" href="https://facebook.com" target="a_blank" rel="noreferrer" ><img src={linkedinLogo} alt="social-media" className="social-media-icon" /></a>
           
+        </div>
+        <div>
+          <StockUs/>
         </div>
       </div>
     </div>

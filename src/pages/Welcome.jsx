@@ -10,6 +10,7 @@ import Layout from '../layout/Layout'
 import Banner02 from '../components/Banner02'
 import BestSellers from '../components/BestSellers'
 import Partners from '../components/Partners'
+import GoogleBussiness from '../components/GoogleBussiness'
 
 export default function Welcome(props) {
   return (
@@ -20,15 +21,10 @@ export default function Welcome(props) {
     <Banner02/>
     <OurServices/>
     <IncludeFeatures/>
+    
     <BestSellers/>
+    <GoogleBussiness/>
 
-{/* 
-planes
-faq
-tecnologias
-testimonios
-contacto
-*/}
 <FAQ/>
 <Partners/>
 <Contact/>
