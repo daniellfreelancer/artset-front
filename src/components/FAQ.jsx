@@ -16,7 +16,7 @@ export default function FAQ() {
     const handleFour = ()=>{setFourQ(!fourQ)}
 
   return (
-    <div  className='container div-faqs my-5 py-5'>
+    <div  className='container div-faqs my-5 pb-5'>
         <h4 className='pb-3' id='faq'>Preguntas frecuentes</h4>
 
         <div className='div-faq-text div-faq-first'>

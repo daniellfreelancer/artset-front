@@ -1,6 +1,6 @@
 import React from 'react'
 import Digital from '../assets/digitalocean-2.svg';
-import DonWeb from '../assets/descarga.png'
+import MercadoPago from '../assets/mercadopago.svg'
 import Facebook from '../assets/facebook-ads.svg'
 import Google from '../assets/google-mi-negocio.svg';
 import Adwords from '../assets/google-adwords.svg'
@@ -16,9 +16,9 @@ export default function Partners() {
             alt:"DigitalOcean Logo"
         },
         {
-            id:"DonWeb",
-            src:DonWeb,
-            alt:"DonWeb Logo"
+            id:"MercadoPago",
+            src:MercadoPago,
+            alt:"MercadoPago Logo"
         },
         {
             id:"Facebook",

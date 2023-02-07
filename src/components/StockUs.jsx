@@ -2,6 +2,7 @@ import axios from 'axios'
 import React from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
+import Loading from './Loading'
 
 export default function StockUs() {
 
@@ -18,7 +19,7 @@ export default function StockUs() {
                 }
 
             }).catch((error)=>console.log(error))
-        },60000)
+        },5000)
 
         return()=>{
             clearInterval(intervailId)
@@ -31,8 +32,8 @@ export default function StockUs() {
 
 
   return (
-    <div>
-        <p>Cotización Banco Nación: <strong>{dolar}</strong> Ars</p>
+    <div className='div-stock'>
+        <p>Cotización dolar oficial BNA: <strong>{dolar ? dolar : <Loading/>}</strong> Ars</p>
     </div>
   )
 }

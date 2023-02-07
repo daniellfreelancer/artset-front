@@ -7,6 +7,7 @@ import landing from '../assets/landingPage.png'
 import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
+import Loading from "./Loading";
 
 export default function CardBestSeller() {
 
@@ -40,7 +41,7 @@ const [websiteState, setWebsiteState] = useState(true)
               }
 
           }).catch((error)=>console.log(error))
-      },1000)
+      },5000)
       return()=>{
           clearInterval(intervailId)
       }
@@ -58,7 +59,7 @@ const [websiteState, setWebsiteState] = useState(true)
       </div>
       <div className="text-center pt-2">
         {
-          landingMonth ? (        <h4 className="price-title">Ar$ {landingState ? parseInt(landingMonth / 12 *0.30 + landingMonth / 12).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')  : parseInt(landingMonth).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.') }</h4>) : null
+          landingMonth ? (        <h4 className="price-title">Ar$ {landingState ? parseInt(landingMonth / 12 *0.30 + landingMonth / 12).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')  : parseInt(landingMonth).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.') }</h4>) : <Loading/>
         }
 
         <p className="price-text">Precio por {landingState ? 'mes' : 'único'} </p>
@@ -104,7 +105,7 @@ const [websiteState, setWebsiteState] = useState(true)
       </div>
       <div className="text-center pt-2">
         {
-          ecommerce ? (      <h4 className="price-title">Ar$ {ecommerceState ? parseInt(ecommerce / 12 *0.30 + ecommerce / 12).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')  : parseInt(ecommerce).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.') }</h4>) : null
+          ecommerce ? (      <h4 className="price-title">Ar$ {ecommerceState ? parseInt(ecommerce / 12 *0.30 + ecommerce / 12).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')  : parseInt(ecommerce).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.') }</h4>) : <Loading/>
         }
 
 
@@ -159,7 +160,7 @@ const [websiteState, setWebsiteState] = useState(true)
       </div>
       <div className="text-center pt-2">
       {
-          webSite ? (      <h4 className="price-title">Ar$ {websiteState ? parseInt(webSite / 12 *0.30 + webSite / 12).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')  : parseInt(webSite).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.') }</h4>) : null
+          webSite ? (      <h4 className="price-title">Ar$ {websiteState ? parseInt(webSite / 12 *0.30 + webSite / 12).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')  : parseInt(webSite).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.') }</h4>) : <Loading/>
         }
 
 

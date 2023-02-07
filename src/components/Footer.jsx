@@ -3,8 +3,8 @@ import { ThemeContext } from "../layout/Layout";
 import "../styles/Footer.css";
 import facebookLogo from '../assets/facebook.png';
 import instagramLogo from '../assets/instagram.png';
-import twitterLogo from '../assets/gorjeo.png';
-import linkedinLogo from '../assets/linkedin.png';
+import tiktokLogo from '../assets/tik-tok.png';
+// import linkedinLogo from '../assets/linkedin.png';
 import { useCreateEmailMutation } from "../features/emailAPI";
 import swal from 'sweetalert2';
 import LogoLight from "./LogoLight";
@@ -90,10 +90,10 @@ export default function Footer() {
         </div>
         </form>
         <div className="div-social-media">
-          <a className="link-social-media" href="https://facebook.com" target="a_blank" rel="noreferrer" ><img src={facebookLogo} alt="social-media" className="social-media-icon" /></a>
-          <a className="link-social-media" href="https://facebook.com" target="a_blank" rel="noreferrer" ><img src={instagramLogo} alt="social-media" className="social-media-icon" /></a>
-          <a className="link-social-media" href="https://facebook.com" target="a_blank" rel="noreferrer" ><img src={twitterLogo} alt="social-media" className="social-media-icon" /></a>
-          <a className="link-social-media" href="https://facebook.com" target="a_blank" rel="noreferrer" ><img src={linkedinLogo} alt="social-media" className="social-media-icon" /></a>
+          <a className="link-social-media" href="https://www.facebook.com/profile.php?id=100090103687266" target="a_blank" rel="noreferrer" ><img src={facebookLogo} alt="social-media" className="social-media-icon" /></a>
+          <a className="link-social-media" href="https://www.instagram.com/artsetweb" target="a_blank" rel="noreferrer" ><img src={instagramLogo} alt="social-media" className="social-media-icon" /></a>
+          <a className="link-social-media" href="https://www.tiktok.com/@artsetweb" target="a_blank" rel="noreferrer" ><img src={tiktokLogo} alt="social-media" className="social-media-icon" /></a>
+          {/* <a className="link-social-media" href="https://facebook.com" target="a_blank" rel="noreferrer" ><img src={linkedinLogo} alt="social-media" className="social-media-icon" /></a> */}
           
         </div>
         <div>

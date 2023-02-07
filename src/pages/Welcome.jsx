@@ -14,20 +14,18 @@ import GoogleBussiness from '../components/GoogleBussiness'
 
 export default function Welcome(props) {
   return (
-<Layout>
-    <CallToAction/>
-    <WeAre/>
-    <Banner01/>
-    <Banner02/>
-    <OurServices/>
-    <IncludeFeatures/>
-    
-    <BestSellers/>
-    <GoogleBussiness/>
-
-<FAQ/>
-<Partners/>
-<Contact/>
-</Layout>
+    <Layout>
+      <CallToAction />
+      <WeAre />
+      <Banner01 />
+      <Banner02 />
+      <OurServices />
+      <IncludeFeatures />
+      <BestSellers />
+      <GoogleBussiness />
+      <FAQ />
+      <Partners />
+      <Contact />
+    </Layout>
   )
 }
